@@ -23,11 +23,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Injectable({
   providedIn: 'root'
 })
-export class TradesService {
+export class MarketViewService {
 
   constructor() { }
 
-  getTrades() {
+  getMarketView() {
     return ELEMENT_DATA;
   }
 }

@@ -2,19 +2,35 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { TradesComponent } from './trades/trades.component';
 import { AppRoutingModule } from './app-routing.module';
-import { OffersComponent } from './offers/offers.component';
-import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { MarketViewComponent } from './pages/market-view/market-view.component';
+import { OrderDepthComponent } from './pages/order-depth/order-depth.component';
+import { MarketTradesComponent } from './pages/market-trades/market-trades.component';
+import { OrderEntryComponent } from './pages/order-entry/order-entry.component';
+import { MyOrdersComponent } from './pages/my-orders/my-orders.component';
+import { MyTradesComponent } from './pages/my-trades/my-trades.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { PageLayoutComponent } from './layouts/page-layout/page-layout.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TradesComponent,
-    OffersComponent,
-    HomeComponent
+    MarketViewComponent,
+    OrderDepthComponent,
+    MarketTradesComponent,
+    OrderEntryComponent,
+    MyOrdersComponent,
+    MyTradesComponent,
+    NavigationComponent,
+    HeaderComponent,
+    PageLayoutComponent,
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
