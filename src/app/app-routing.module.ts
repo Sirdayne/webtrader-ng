@@ -9,11 +9,12 @@ import { MyTradesComponent } from './pages/my-trades/my-trades.component';
 import { PageLayoutComponent } from './layouts/page-layout/page-layout.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LoginComponent } from './auth/login/login.component';
+import { HomeComponent } from './home/home.component';
 
 const childrenComponents = [
   {
     path: '',
-    component: MarketViewComponent
+    component: HomeComponent
   },
   {
     path: 'order-depth',

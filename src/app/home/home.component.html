@@ -1,0 +1,26 @@
+<div style="height: calc(100vh - 100px);">
+  <div class="split-example" style="height: 100%;">
+    <as-split direction="horizontal" [restrictMove]="true" [useTransition]="true">
+      <as-split-area [size]="50">
+        <as-split direction="vertical" [restrictMove]="true">
+          <as-split-area [size]="50">
+            <app-market-view></app-market-view>
+          </as-split-area>
+          <as-split-area [size]="50">
+            <app-my-orders></app-my-orders>
+          </as-split-area>
+        </as-split>
+      </as-split-area>
+      <as-split-area [size]="50">
+        <as-split direction="vertical" [restrictMove]="true">
+          <as-split-area [size]="50">
+            <app-order-entry></app-order-entry>
+          </as-split-area>
+          <as-split-area [size]="50">
+            <app-my-trades></app-my-trades>
+          </as-split-area>
+        </as-split>
+      </as-split-area>
+    </as-split>
+  </div>
+</div>
