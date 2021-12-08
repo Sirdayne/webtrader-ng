@@ -17,7 +17,6 @@ import { PageLayoutComponent } from './layouts/page-layout/page-layout.component
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AngularSplitModule } from 'angular-split';
-import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({

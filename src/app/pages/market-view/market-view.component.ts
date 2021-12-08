@@ -15,6 +15,23 @@ export class MarketViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  displayedColumns: string[] = ['security', 'period', 'currency', 'assetClass', 'refPrice', 'haircut', 'repoPrice'];
+  displayedColumns: string[] = [
+    'security', 'period', 'currency', 'assetClass', 'refPrice', 'haircut', 'repoPrice',
+    'qtyToLend',
+    'amountToLend',
+    'lenderRepoRate',
+    'qtyToBorrow',
+    'amountToBorrow',
+    'borrowerRepoRate',
+    'openRepoRate',
+    'highRepoRate',
+    'lowRepoRate',
+    'lastRepoRate',
+    'previousCloseRepoRate',
+    'repoRateChange',
+    'dailyVolume',
+    'dailyValue',
+    'numberOfTrades'
+  ];
   dataSource = this.marketViewService.getMarketView();
 }
