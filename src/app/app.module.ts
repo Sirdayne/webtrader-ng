@@ -18,6 +18,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AngularSplitModule } from 'angular-split';
 import { HomeComponent } from './home/home.component';
+import { TableTitleComponent } from './components/table-title/table-title.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HomeComponent } from './home/home.component';
     PageLayoutComponent,
     NotFoundComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    TableTitleComponent
   ],
   imports: [
     BrowserModule,

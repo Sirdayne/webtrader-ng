@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyTradesService } from './my-trades.service';
 
 @Component({
   selector: 'app-my-trades',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyTradesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myTradesService: MyTradesService) { }
 
   ngOnInit(): void {
   }
 
+  displayedColumns: string[] = [
+    'time', 'tradeId', 'orderId', 'side', 'status', 'security', 'duration',
+    'repoRate', 'quantity', 'amount', 'repurchaseDate', 'repurchaseValue', 'deltaRepoIncome', 'investor'
+  ];
+  dataSource = this.myTradesService.getMyTrades();
 }

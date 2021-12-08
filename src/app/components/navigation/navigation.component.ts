@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationLinkI } from '../../models/market.inteface';
+import { NavigationLinkI } from '../../models/navigation-link.inteface';
 
 @Component({
   selector: 'app-navigation',
