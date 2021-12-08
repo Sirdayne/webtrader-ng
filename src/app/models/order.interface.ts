@@ -1,8 +1,7 @@
-export interface TradeI {
+export interface OrderI {
   time: string;
-  tradeId?: number;
-  orderId?: number;
-  side?: string;
+  orderId: number;
+  side: string;
   status: string;
   security: string;
   duration: number;
@@ -11,6 +10,7 @@ export interface TradeI {
   amount: number;
   repurchaseDate: string;
   repurchaseValue: number;
-  deltaRepoIncome: number;
-  investor?: string;
+  orderType: string;
+  investor: string;
+  allOrNone: boolean;
 }

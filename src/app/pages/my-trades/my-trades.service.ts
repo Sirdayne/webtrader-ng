@@ -3,7 +3,7 @@ import { TradeI } from '../../models/trade.interface';
 
 const myTrades: TradeI[] = [
   {
-    time: '09-06-2022T13:00:00',
+    time: '2022-06-09T13:00:00',
     tradeId: 23,
     orderId: 453,
     side: 'Buy',
@@ -13,13 +13,13 @@ const myTrades: TradeI[] = [
     repoRate: 3,
     quantity: 1300,
     amount: 33059,
-    repurchaseDate: '09-06-2022T00:00:00',
+    repurchaseDate: '2022-06-09T00:00:00',
     repurchaseValue: 33061.72,
     deltaRepoIncome: 2.72,
     investor: '000000963'
   },
   {
-    time: '11-06-2022T13:00:00',
+    time: '2022-06-11T13:00:00',
     tradeId: 1,
     orderId: 2,
     side: 'Buy',
@@ -29,13 +29,13 @@ const myTrades: TradeI[] = [
     repoRate: 4,
     quantity: 1400,
     amount: 33059,
-    repurchaseDate: '09-06-2022T00:00:00',
+    repurchaseDate: '2022-06-09T00:00:00',
     repurchaseValue: 33061.72,
     deltaRepoIncome: 2.72,
     investor: '000000963'
   },
   {
-    time: '09-06-2022T13:00:00',
+    time: '2022-06-09T13:00:00',
     tradeId: 23,
     orderId: 453,
     side: 'Buy',
@@ -45,13 +45,13 @@ const myTrades: TradeI[] = [
     repoRate: 3,
     quantity: 1300,
     amount: 33059,
-    repurchaseDate: '09-06-2022T00:00:00',
+    repurchaseDate: '2022-06-09T00:00:00',
     repurchaseValue: 33061.72,
     deltaRepoIncome: 2.72,
     investor: '000000963'
   },
   {
-    time: '11-06-2022T13:00:00',
+    time: '2022-06-11T13:00:00',
     tradeId: 1,
     orderId: 2,
     side: 'Buy',
@@ -61,13 +61,13 @@ const myTrades: TradeI[] = [
     repoRate: 4,
     quantity: 1400,
     amount: 33059,
-    repurchaseDate: '09-06-2022T00:00:00',
+    repurchaseDate: '2022-06-09T00:00:00',
     repurchaseValue: 33061.72,
     deltaRepoIncome: 2.72,
     investor: '000000963'
   },
   {
-    time: '09-06-2022T13:00:00',
+    time: '2022-06-09T13:00:00',
     tradeId: 23,
     orderId: 453,
     side: 'Buy',
@@ -77,13 +77,13 @@ const myTrades: TradeI[] = [
     repoRate: 3,
     quantity: 1300,
     amount: 33059,
-    repurchaseDate: '09-06-2022T00:00:00',
+    repurchaseDate: '2022-06-09T00:00:00',
     repurchaseValue: 33061.72,
     deltaRepoIncome: 2.72,
     investor: '000000963'
   },
   {
-    time: '11-06-2022T13:00:00',
+    time: '2022-06-11T13:00:00',
     tradeId: 1,
     orderId: 2,
     side: 'Buy',
@@ -93,7 +93,7 @@ const myTrades: TradeI[] = [
     repoRate: 4,
     quantity: 1400,
     amount: 33059,
-    repurchaseDate: '09-06-2022T00:00:00',
+    repurchaseDate: '2022-06-09T00:00:00',
     repurchaseValue: 33061.72,
     deltaRepoIncome: 2.72,
     investor: '000000963'
