@@ -1,1 +1,45 @@
-<p>order-entry works!</p>
+<div class="w-full" style="min-width: 600px;">
+  <div class="sticky top-0 bg-gray-200 z-10">
+    <app-table-title [label]="'Order Entry'"></app-table-title>
+  </div>
+
+  <div class="px-6 py-2">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div>
+        <mat-form-field>
+          <mat-label>Security</mat-label>
+          <input matInput formControlName="security">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Period</mat-label>
+          <mat-select required formControlName="period">
+            <mat-option *ngFor="let item of periods" [value]="item">{{item}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Side</mat-label>
+          <mat-select required formControlName="side">
+            <mat-option *ngFor="let item of sides" [value]="item">{{item}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Type</mat-label>
+          <mat-select required formControlName="type">
+            <mat-option *ngFor="let item of types" [value]="item">{{item}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <button color="primary" mat-raised-button type="submit">SEND</button>
+    </form>
+  </div>
+</div>
