@@ -18,6 +18,10 @@ export class OrderEntryComponent implements OnInit {
       period: ['', [Validators.required]],
       side: ['', [Validators.required]],
       type: ['', [Validators.required]],
+      rate: ['', [Validators.required]],
+      amount: ['', [Validators.required]],
+      quantity: ['', [Validators.required]],
+      investor: ['', [Validators.required]]
     });
   }
 
