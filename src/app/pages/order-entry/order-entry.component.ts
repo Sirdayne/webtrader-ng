@@ -10,7 +10,7 @@ export class OrderEntryComponent implements OnInit {
   form: FormGroup;
   periods = [1, 2, 3, 4, 5, 6, 7];
   sides = ['SELL', 'BUY'];
-  types = ['LIMIT', 'IOC (FAK)', 'FOK'];
+  types = ['LIMIT', 'MARKET IOC (FAK)', 'MARKET FOK'];
 
   constructor(private fb: FormBuilder) {
     this.form = fb.group({
