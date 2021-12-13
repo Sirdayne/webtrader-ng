@@ -1,1 +1,33 @@
-<p>login works!</p>
+<app-header></app-header>
+
+<div>
+  <div class="flex w-full h-full py-10 items-center justify-center">
+    <div class="px-6 py-4 card">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="username">
+          </mat-form-field>
+          <mat-error *ngIf="form.get('username').invalid">
+            {{ form.get('username')?.errors }}
+          </mat-error>
+        </div>
+
+        <div>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password">
+          </mat-form-field>
+          <mat-error *ngIf="form.get('password').invalid">
+            {{ form.get('password')?.errors }}
+          </mat-error>
+        </div>
+
+        <div class="mt-4 flex justify-center">
+          <button mat-raised-button color="primary" type="submit">LOGIN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
