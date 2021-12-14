@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { IAppState } from '../../core/store/state/app.state';
+import { Store } from '@ngrx/store';
+import { setUser } from '../../core/store/actions/user.actions';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +16,8 @@ export class LoginComponent implements OnInit {
   loading = false;
 
   constructor(private fb: FormBuilder,
-              private router: Router) {
+              private router: Router,
+              private store: Store<IAppState>) {
     this.form = fb.group({
       username: ['', [Validators.required]],
       password: ['', [Validators.required]]
@@ -25,7 +29,10 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    console.log(this.form, ' FORM');
+    this.store.dispatch(setUser( { user: {
+      name: this.form.get('username')?.value,
+      role: 'Trader'
+    }}));
     if (this.form.valid) {
       this.router.navigateByUrl('/');
     }

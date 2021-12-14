@@ -19,6 +19,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { AngularSplitModule } from 'angular-split';
 import { HomeComponent } from './home/home.component';
 import { TableTitleComponent } from './components/table-title/table-title.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { TableTitleComponent } from './components/table-title/table-title.compon
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CoreModule,
     SharedModule,
     AngularSplitModule
   ],
