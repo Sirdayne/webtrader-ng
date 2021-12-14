@@ -8,8 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
   form: FormGroup;
+  submitted = false;
+  loading = false;
 
   constructor(private fb: FormBuilder,
               private router: Router) {
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    this.submitted = true;
     console.log(this.form, ' FORM');
     if (this.form.valid) {
       this.router.navigateByUrl('/');
